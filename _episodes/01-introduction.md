@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
-teaching: 15
-exercises: 15
+teaching: 20
+exercises: 30
 questions:
 - "How do I start working in Galaxy?"
 - "What does my raw sequencing data looks like?"

@@ -1,7 +1,7 @@
 ---
 title: "Filtering and Assembly"
-teaching: 15
-exercises: 15
+teaching: 20
+exercises: 30
 questions:
 - "How do I assemble my genome?"
 - "How do I asses my assembly result?"
