@@ -32,6 +32,8 @@ When you are contempt with the workflow, run it by:
 5. On the `1: input dataset`, select `2: barcode02.fastq` as the input.
 6. Click `Run Workflow` on the top panel.
 
+<iframe src="https://drive.google.com/file/d/1VCbLh9V-k5BiWqKMp756HZ2BErXC-aZV/preview" width="640" height="480" allow="autoplay"></iframe>
+
 While we are waiting for the results, lets take an overview of each processes.
 
 ## Trimming and Filtering Reads
