@@ -131,7 +131,7 @@ We just run a simple QC to our raw reads, and it might take a while for the jobs
 > > 
 > > Example of Nanoplot result
 > >
-> > ![image alt text](../fig/03-1_Nanoplot.png){: .image-with-shadow :width="400px"}
+> > ![image alt text](https://raw.githubusercontent.com/matinnuhamunada/27255_week_11/gh-pages/fig/03-1_Nanoplot.png){: .image-with-shadow :width="400px"}
 > >
 > > Before the assembly a quality check is necessary. For that we can use Nanoplot with default settings. Nanoplot gives several output files, but you can get an easy overview with the HTML report. The most important numbers there the mean read quality and the read length N50. The read quality is denoted as a Phred score and is for nanopore reads typicall not very high. Anything above 7 should be fine. If you want to know more, it is possible to calculate back from the Phred score to the estimated probability of erroneous base pairs. The N50 is a measurement for the contiguity or the mean read/contig length. It is defined as the sequence length of the shortest contig at 50% of the total genome length. Low N50 (<1000bp) of the nanopore reads usually indicate sheared DNA, which can occur due to problems during the library prep or DNA extraction. 
 > {: .solution}

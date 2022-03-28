@@ -40,12 +40,12 @@ While we are waiting for the results, lets take an overview of each processes.
 ### Porechop: Adapter removal from raw nanopore reads
 In order for the DNA to attach and translocate the nanopore and thereby enable sequencing, we add adapters to both fragments of our DNA (template and complement strand) in the library preparation step. Following sequencing, the adapters need to be removed from the raw sequencing data before further processing, as they are synthetic sequences. In the workflow, we will use `Porechop` with default setting to remove adaptors from the nanopore raw reads. If Porechop is running too slow, we can also use alternative programs such as `cutadapt` or `trimmomatic`. 
 
-![image alt text](../fig/01_porechop.png){: .image-with-shadow :width="300px"}
+![image alt text](https://raw.githubusercontent.com/matinnuhamunada/27255_week_11/gh-pages/fig/01_porechop.png){: .image-with-shadow :width="300px"}
 
 ### Filtlong: Trimming short and bad quality reads
 As a next step you are recommend subsetting and reducing the dataset with filtlong. This is not strictly necessary, but it will reduce the running time of the following steps and usually an average genome coverage of over 50 does not significantly improve the assembly in our experience. The coverage is defined by the number of reads that cover a given nucleotide. The genome coverage can be calculated by (number of total bp in reads)*(genome length in bp) or alternatively (number of reads)*(average read length in bp)*(genome length in bp). So to calculate the number of bp we need for a genome coverage of 50, we simply multiply the estimated genome size by 50, for example: 5 000 000 * 50 = 250 000 000. To be sure we can take 300 000 000 bp, which we then put in the setting “total bases” see image blow. Additionally, it is recommended to filter out shorter reads (<1000bp), since they are not helpful for the assembly.
 
-![image alt text](../fig/02_filtlong.png){: .image-with-shadow :width="200px"}
+![image alt text](https://raw.githubusercontent.com/matinnuhamunada/27255_week_11/gh-pages/fig/02_filtlong.png){: .image-with-shadow :width="200px"}
 
 ### Compare Raw vs Filtered Nanoplot Stats
 We can get an overview of how our reads looked like after the filtering process by comparing the filtered with the raw Nanoplot stats.
@@ -65,7 +65,7 @@ We can get an overview of how our reads looked like after the filtering process 
 ### Flye: Assembling long-reads into whole genome
 There is a wide range of different assembly tools, and you are free to choose which one you use. However, we advise you to [consider the advantages and disadvantages of the tool you apply](https://f1000research.com/articles/8-2138). Below, `Flye` was used as an example for the assembly of the trimmed and subsetted reads. Flye has been shown to have a high contig contiguity and accuracy, however it needs a lot or RAM usage and has a longer run time. So, if it runs to slow consider using a different assembly tool.
 
-![image alt text](../fig/04_flye.png){: .image-with-shadow :width="200px"}
+![image alt text](https://raw.githubusercontent.com/matinnuhamunada/27255_week_11/gh-pages/fig/04_flye.png){: .image-with-shadow :width="200px"}
 
 #### Quality check of assembly
 After the assembly has finished running, we again need to check the quality. For that we can use three different measurements. We can first look at the assembly stats and the assembly graph.
@@ -78,7 +78,7 @@ After the assembly has finished running, we again need to check the quality. For
 >
 > > ## Solution
 > >
-> > ![image alt text](../fig/04-01_flye.png){: .image-with-shadow :width="100px"}
+> > ![image alt text](https://raw.githubusercontent.com/matinnuhamunada/27255_week_11/gh-pages/fig/04-01_flye.png){: .image-with-shadow :width="100px"}
 > {: .solution}
 >
 {: .challenge}
@@ -89,7 +89,7 @@ After the assembly has finished running, we again need to check the quality. For
 > 2. Can you spot the plasmids? What do you expect of a plasmid's coverage compared to that of a genome?
 >
 > > ## Solution
-> > ![image alt text](../fig/05-1_bandage.png){: .image-with-shadow :width="300px"}
+> > ![image alt text](https://raw.githubusercontent.com/matinnuhamunada/27255_week_11/gh-pages/fig/05-1_bandage.png){: .image-with-shadow :width="300px"}
 > > Ideally, all reads are assembled into one genome (example 1), but the fewer pieces (=contigs) the assembly has, the better. Ideally these should also appear circular, as this illustrates a fit of all the reads into an entire genome. However, small contigs (as in example 2) could be plasmids, but could also have resulted from repeats in the genome, which could not be resolved by the assembler.
 > {: .solution}
 >
@@ -98,7 +98,7 @@ After the assembly has finished running, we again need to check the quality. For
 ### Medaka: Polising with Nanopore reads
 For polishing there are again several tools available. Be aware that some assembly pipelines already have the polishing included, while others don’t. Also, some polishing tools work better with specific assemblers. For the polishing example below, we applied the tool “medaka”, using the complete set of trimmed reads to polish our assembly. To check if the polished assembly has actually been improved compared to the unpolished assembly, we can again perform all the steps from (2). 
 
-![image alt text](../fig/06_medaka.png){: .image-with-shadow :width="200px"}
+![image alt text](https://raw.githubusercontent.com/matinnuhamunada/27255_week_11/gh-pages/fig/06_medaka.png){: .image-with-shadow :width="200px"}
 
 {% include links.md %}
 
