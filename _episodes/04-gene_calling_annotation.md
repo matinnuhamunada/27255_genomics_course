@@ -37,23 +37,9 @@ When you are contempt with the workflow, click save. Next, we will run the analy
 >
 {: .challenge}
 
-## antiSMASH: 
+## Busco: 
 
-> ## Discussion 02 - AntiSMASH
-> 
->
-> > ## Solution
-> >
-> > TBD
-> {: .solution}
->
-{: .challenge}
-
-## Abricate 
-ABRicate is a tool for the detection of antimicrobial and virulence genes. It is also available on Galaxy, so you don’t have to download your assembly for this. It uses different databases for example CARD to detect virulence genes in the genome. For more information: https://github.com/tseemann/abricate.  
-See below an example of default parameters with CARD database selected, an explanation of the output table and an example output. 
-
-> ## Discussion 02 - AntiSMASH
+> ## Discussion 02 - Busco
 > 
 >
 > > ## Solution
