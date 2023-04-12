@@ -4,7 +4,7 @@ root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
 > ## Course Information
-> - This is the bioinformatic tutorial for week 11 of the course **27255 - Advanced Experimental Prokaryotic Molecular Biology and Ecology (Spring 2022)** held at DTU Bioengineering.
+> - This is the bioinformatic tutorial for week 11 of the course **27255 - Advanced Experimental Prokaryotic Molecular Biology and Ecology (Spring 2023)** held at DTU Bioengineering.
 > - Introduction to lab-work: **Building 202/Room 7001**
 > - Lab work: **Building 202/Room 7007**
 {: .callout}
