@@ -45,19 +45,17 @@ We will be using similar pipeline to the one suggested by Ryan Wick with several
 ## Importing Data into Galaxy
 There are several ways we can input our data into Galaxy. We can upload datasets from our local machine, fetch from a public repository such as Zenodo, or reuse data from Galaxy history.
 
-**We will inform you how to fetch your raw sequencing data when it is ready**. In the meantime, we can do an exercise using the data from **previous year (2022)**, which are available from [Zenodo](https://zenodo.org/record/6475902). 
+**We will inform you how to fetch your raw sequencing data when it is ready**. In the meantime, we can do an exercise using the data from **previous year (2022)**, which are available from [Zenodo](https://zenodo.org/record/6475902). We will be using the strain with decent reads (`barcode02`).
 
 Let's login to Galaxy and import this data into our history:
 1. Go to [https://usegalaxy.eu/](https://usegalaxy.eu/){:target="_blank"}
 2. Click `Login or Register`. Create an account and activate (if you hadn’t so)
 3. Import the data by pressing the `Upload Data` button on the upper right corner and choose the `Paste/Fetch data` button at the bottom window.
-4. Change the name from `New file` to `barcode07.fastq.gz` and paste the zenodo link: `https://zenodo.org/record/6475902/files/barcode07.fastq.gz` into the box.
+4. Change the name from `New file` to `barcode02.fastq.gz` and paste the zenodo link: `https://zenodo.org/record/6475902/files/barcode02.fastq.gz` into the box.
 5. Press start to download
 
-<iframe src="https://drive.google.com/file/d/1_5GT66NGPE07TGLrI5CcaCF9ULCg_V0i/preview" width="640" height="480" allow="autoplay"></iframe>
-
 > ## Discussion 01
-> Each item in the Zenodo repository are the samples raw reads that has been demultiplexed (one strain each).
+> Each item in the [Zenodo repository](https://zenodo.org/record/6475902) are the sample raw reads that has been demultiplexed (one strain each).
 > 1. How many gigabytes of data are there?
 > 2. How much data was generated for an average sample?
 > 3. Why do we have uneven distribution of data for each samples?
