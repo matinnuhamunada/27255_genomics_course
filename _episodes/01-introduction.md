@@ -32,7 +32,7 @@ More information on sequencing techniques:
 
 <div style="width: 640px; height: 120px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:120px" src="https://lucid.app/documents/embeddedchart/2d2d642d-65ea-4f1b-a1e0-329c5ee118e9" id="J954-Kp1sEdf"></iframe></div>
 
-Ryan Wick provides a nice ["Guide to bacterial genome assembly"](https://github.com/rrwick/Trycycler/wiki/Guide-to-bacterial-genome-assembly) as a starting point to choose which approaches and techniques to assemble your genome. He also write a nice comparison of different assembly tools: [https://f1000research.com/articles/8-2138](https://f1000research.com/articles/8-2138).
+Ryan Wick provides a nice ["Guide to bacterial genome assembly"](https://github.com/rrwick/Trycycler/wiki/Guide-to-bacterial-genome-assembly) as a starting point to choose which approaches and techniques to assemble your genome. He also write an approach in combining ONT long reads with Illumina short reads to achieve perfect assemblies: [Assembling the perfect bacterial genome using Oxford Nanopore and Illumina sequencing](https://doi.org/10.1371/journal.pcbi.1010905).
 
 The general pipeline for processing nanopore reads into whole genomes are:
 1.	Trimming and filtering reads
@@ -45,19 +45,19 @@ We will be using similar pipeline to the one suggested by Ryan Wick with several
 ## Importing Data into Galaxy
 There are several ways we can input our data into Galaxy. We can upload datasets from our local machine, fetch from a public repository such as Zenodo, or reuse data from Galaxy history.
 
-**We will inform you how to fetch your raw sequencing data when it is ready**. In the meantime, we can do an exercise using the data from **last year (2021)**, which are available from Aileen's (previous TA) history. 
+**We will inform you how to fetch your raw sequencing data when it is ready**. In the meantime, we can do an exercise using the data from **previous year (2022)**, which are available from [Zenodo](https://zenodo.org/record/6475902). 
 
 Let's login to Galaxy and import this data into our history:
 1. Go to [https://usegalaxy.eu/](https://usegalaxy.eu/){:target="_blank"}
 2. Click `Login or Register`. Create an account and activate (if you hadn’t so)
-3. Go to Aileen's history at: [https://usegalaxy.eu/u/aileen/h/nanoporesequencesmastercourse](https://usegalaxy.eu/u/aileen/h/nanoporesequencesmastercourse){:target="_blank"}
-4. Import the data by pressing the `+` button on the upper right corner and click `import`. _Note that this only works if you are on the same server._
-5. Rename the history to _"27255_raw_2021"_
+3. Import the data by pressing the `Upload Data` button on the upper right corner and choose the `Paste/Fetch data` button at the bottom window.
+4. Change the name from `New file` to `barcode07.fastq.gz` and paste the zenodo link: `https://zenodo.org/record/6475902/files/barcode07.fastq.gz` into the box.
+5. Press start to download
 
 <iframe src="https://drive.google.com/file/d/1_5GT66NGPE07TGLrI5CcaCF9ULCg_V0i/preview" width="640" height="480" allow="autoplay"></iframe>
 
 > ## Discussion 01
-> Each item in the history are the samples raw reads that has been demultiplexed. 
+> Each item in the Zenodo repository are the samples raw reads that has been demultiplexed (one strain each).
 > 1. How many gigabytes of data are there?
 > 2. How much data was generated for an average sample?
 > 3. Why do we have uneven distribution of data for each samples?
