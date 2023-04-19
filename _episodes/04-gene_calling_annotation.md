@@ -26,9 +26,11 @@ When you are contempt with the workflow, click save. Next, we will run the analy
 6. Click `Run Workflow` on the top panel.
 
 ## Prokka: rapid prokaryotic genome annotation
+Prokka is a software tool to annotate bacterial, archaeal and viral genomes quickly and produce standards-compliant output files.
 
 > ## Discussion 01 - Prokka
-> 
+> 1. What kind of output do you get from Prokka?
+> 2. Which outputs can be used for subsequent analysis?
 >
 > > ## Solution
 > >
@@ -38,9 +40,11 @@ When you are contempt with the workflow, click save. Next, we will run the analy
 {: .challenge}
 
 ## Busco: 
-
+Busco is a functional quality control based on evolutionarily-informed expectations of gene content of near-universal single-copy orthologs
 > ## Discussion 02 - Busco
-> 
+> 1. What kind of output do you get from Busco?
+> 2. How do you know if your genome is contaminated or incomplete?
+> 3. What other tools can we use for quality checking our genome completeness and contamination?
 >
 > > ## Solution
 > >

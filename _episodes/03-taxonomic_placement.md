@@ -24,11 +24,13 @@ We will use [autoMLST](https://automlst.ziemertlab.com/analyze) to get an overvi
 5. Click `Submit job`
 
 ## Other tools to consider
+There are also other bioinformatic tools for phylogenomic placement. 
+### GTDB-tk
+> a toolkit for assigning objective taxonomic classifications to bacterial and archaeal genomes by placing the sequence to the GTDB tree database.
 ### RefSeq_Masher
 > Find what NCBI RefSeq genomes match or are contained within your sequence data using Mash MinHash with a Mash sketch database of 54,925 NCBI RefSeq Genomes.
 
-### GTDB-tk
-> a toolkit for assigning objective taxonomic classifications to bacterial and archaeal genomes.
+
 
 > ## Discussion 01
 > 
