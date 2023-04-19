@@ -12,6 +12,8 @@ keypoints:
 - "You can do a sanity check of your assembly by using prior knowledge such as: (1) expected genome size, (2) expected structure of the genome (circular or linear), (3) compare contigs length and depth distribution, and (4) make sense of the assembly graph. From this information, you can decide whether you need to add more depths (by re-sequencing) or do another run if the result is too fragmented."
 ---
 ## Switching history & using template workflow
+> If you cannot find `27255_raw_2021` `history`, you can also reuse other histories that already has the `barcode02.fastq.gz` data.
+
 We will go back to use the raw data from the `27255_raw_2021` `history` to assemble the sample file `barcode02.fastq`:
 1. On the history panel, click the second icon from the left (`view all histories`)
 2. Find the `27255_raw_2021` `history` which contains the raw read data, and click `Switch to`. Note that the history will move to the left as the `Current History`.
